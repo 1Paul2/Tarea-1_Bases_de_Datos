@@ -7,7 +7,8 @@ Poll Anthony Garro Vargas - 2024129001
 Completado
 
 ## Enlace del video:
-[URL del video en YouTube - público]
+
+https://youtu.be/2nl_oDBML7g
 
 ---
 
