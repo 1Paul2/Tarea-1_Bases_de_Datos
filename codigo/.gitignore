@@ -1,0 +1,22 @@
+# Dependencias de Node.js
+node_modules/
+
+# Archivo de variables de entorno (¡CREDENCIALES!)
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de respaldo grandes (no subir a GitHub)
+*.bak
+
+# Carpeta de VS Code
+.vscode/
+
+# Backups
+*.tmp
