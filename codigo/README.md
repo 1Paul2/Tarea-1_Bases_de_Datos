@@ -1,1 +1,1 @@
-Aqui van los archivos .sql necesarios del proyecto
+Aqui van los archivos Node.js necesarios del proyecto

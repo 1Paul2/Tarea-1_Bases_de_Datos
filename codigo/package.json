@@ -1,0 +1,20 @@
+{
+  "name": "tarea-1_bases_de_datos",
+  "version": "1.0.0",
+  "description": "[NOMBRE DEL PROYECTO] Nombre y carné de los integrantes: Poll ANthony Garro Vargas Estado del proyecto: Enlace del video:",
+  "main": "index.js",
+ "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mssql": "^12.7.2"
+  }
+  
+}
