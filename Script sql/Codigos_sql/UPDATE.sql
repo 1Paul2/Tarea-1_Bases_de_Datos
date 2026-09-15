@@ -1,17 +1,22 @@
 USE AdventureWorks2025;
 GO
 
-CREATE OR ALTER PROCEDURE dbo.usp_UpdateProduct
-    @ProductID INT,
-    @ListPrice MONEY
+-- =========================================================
+-- 2. UPDATE (parcial, con COALESCE)
+-- =========================================================
+CREATE OR ALTER PROCEDURE dbo.usp_UpdateDepartment
+    @DepartmentID SMALLINT,
+    @Name NVARCHAR(50) = NULL,
+    @GroupName NVARCHAR(50) = NULL
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    UPDATE Production.Product
-    SET ListPrice = @ListPrice,
+    UPDATE HumanResources.Department
+    SET Name = COALESCE(@Name, Name),
+        GroupName = COALESCE(@GroupName, GroupName),
         ModifiedDate = GETDATE()
-    WHERE ProductID = @ProductID;
+    WHERE DepartmentID = @DepartmentID;
 
     SELECT @@ROWCOUNT AS RowsAffected;
 END
